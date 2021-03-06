@@ -167,7 +167,6 @@
     display: inline-flex;
     width: 100%;
     justify-content: space-evenly;
-    /* text-align: center; */
     flex-wrap: wrap;
 }
 
@@ -176,9 +175,14 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-
+.menu-bar .row2 .col2:hover a{
+    color: #001A4D;
+}
 .menu-bar .row2 .col2 a{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
     text-decoration: none;
     color: chocolate;
     /* line-height: 5rem; */
@@ -215,7 +219,9 @@
     height: 50px;
     width: 50px;
 }
-
+.col2 img:hover{
+    cursor: pointer;
+}
 /* .upper .uppercorner ul li:hover .sub-menu-1{
     display: block;
 } */
