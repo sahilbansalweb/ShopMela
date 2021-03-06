@@ -89,23 +89,36 @@
     /* position: relative;
      left: 300px; */
     /* float: right;  */
-    display: flex;
-    /* flex-wrap: wrap; */
+    /* display: flex;
+    flex-wrap: wrap; */
     /* justify-content: center; */
     /* align-items: center; */
-    flex: 1;    
+    /* flex: 1;    
     text-align: right;
-    padding-top: 6px;
+    padding-top: 6px; */
     /* border: 2px solid white; */
-}
-.uppercorner ul{
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex: 99;
+    /* display: inline-flex; */
+    flex: 1;
     text-align: right;
-    list-style: none;
-    color: rgb(182, 47, 182);
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 5rem;
+    padding-right: 9rem;
+    line-height: 3rem;
+    /* align-items:center; */
+    /* justify-content: center; */
 }
+
+.col{
+    /* padding: 0; */
+}
+
+.row1{
+    display: none;
+}
+
+
+
 .upper form{
     padding-left: 10%; 
     width: 50%;
@@ -137,10 +150,10 @@
         flex-flow: column;
     }
 }
-.uppercorner a{
+/* .uppercorner a{
     padding-top: 4px;
-     padding-left: 39px;
-}
+    padding-left: 39px;
+} */
 .navbar{
     padding: 0px;
     margin: 0px;
@@ -150,28 +163,30 @@
     text-align: center;
 }
 
-.menu-bar ul{
+.menu-bar .row2{
     display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* text-align: center; */
     flex-wrap: wrap;
-    list-style: none;
-    color: thistle;
 }
 
-.menu-bar ul li{
-    margin: 15px;
+.menu-bar .row2 .col2{
+    margin: 0px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
-.menu-bar ul li a,.uppercorner ul li a{
+.menu-bar .row2 .col2 a{
     text-decoration: none;
+    color: chocolate;
+    /* line-height: 5rem; */
 }
-.sub-menu-1{
+/* .sub-menu-1{
     display: none;
 }
-ol,
-ul {
-  padding-left: 0rem;
-}
+
 .menu-bar ul li:hover .sub-menu-1,.uppercorner ul li:hover .sub-menu-1{
     display: block;
     position: absolute;
@@ -194,13 +209,15 @@ ul {
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child,.uppercorner ul li:hover .sub-menu-1 ul li:last-child{
     border-bottom: none;
 }
+ */
 
-
-.menu-bar ul li img{
-    height: 60px;
-    width: 60px;
+.col2 img{
+    height: 50px;
+    width: 50px;
 }
 
-.upper .uppercorner ul li:hover .sub-menu-1{
+/* .upper .uppercorner ul li:hover .sub-menu-1{
     display: block;
-}
+} */
+
+  
