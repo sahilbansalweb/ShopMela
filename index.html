@@ -1,59 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopMela - Online Shopping Site for purchasing Shoes</title>
-    <link rel="icon" href="/img/icons8-shopaholic-48.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet"> 
-    <!-- font-family: 'Roboto Mono', monospace; -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/icons8-shopaholic-48.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- font-family: 'Roboto Mono', monospace; -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="./img/icons8-shopaholic-48.png" alt="" width="30" height="24">
+            <a style="margin-left: 5px;" class="navbar-brand" href="#">Shopmela </a>
+         
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                
+              </li> -->
+              
+                <form class="d-flex" style="margin-left: 150px;  ;" >
+                    <input style="width: 400px;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+               
+              
+              <li class="nav-item dropdown" style="margin-left: 150px;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Login
+                </a>
+                
+                <ul class="dropdown-menu bg-success"   aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Sign-In</a></li>
+                  <li><a class="dropdown-item" href="#">Sign-Up</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown" style="margin-left: 15px;"   >
+                <a class="nav-link dropdown-toggle" href="#"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cart
+                </a>
+                
+                <ul class="dropdown-menu bg-success"   aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">View-Cart</a></li>
+                  <li><a class="dropdown-item" href="#">Check-out</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  
+                </ul>
+                <li class="nav-item">
+                    <a style="margin-left: 10px;" class="nav-link" href="#">About us</a>
+                  </li>
+              </li>
+          
+            </ul>
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <header>
         <div class="upper">
             <div class="icon">
-                <img src="/img/icons8-shopaholic-48.png" id="icon">
+                <img src="./img/icons8-shopaholic-48.png" id="icon">
                 <a href="#">ShopMela</a>
             </div>
-            <div class="searchbar">
-               
-                    <input class="input" type="text" placeholder="Search for Products, Brands and more"  > 
-                   
-                <img src="/img/icons8-search.gif" id="search" >
-            </div>
-            <div class="uppercorner">
-                <a href="#">Login⮟</a>
-                <a href="#">More⮟</a>
-                <a href="#">Cart⮟</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+            <div class="uppercorner"> 
+                        
+                         <div class="sub-menu-1">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#">Mission</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">Mission</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">Mission</a>
+                                </div>
+                            </div>
+                        </div> -->
+                <!-- <div class="row">
+                    <div class="col">
+                        <a href="#">Login⮟</a>
+                        <div class="row1">
+                            <div class="col1">Mission</div>
+                            <div class="col1">Vission</div>
+                            <div class="col1">Achivements</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#">More⮟</a>
+                    </div>
+                    <div class="col">
+                        <a href="#">Cart⮟</a>
+                    </div>
+                    
+                </div>
+                    
+
+
+
             </div>
         </div>
-        <!-- <div class="navbar">
-            <div class="items" id="item-1"></div>
-            <div class="items" id="item-2"></div>
-            <div class="items" id="item-3"></div>
-            <div class="items" id="item-4"></div>
-            <div class="items" id="item-5"></div>
-            <div class="items" id="item-6"></div>
-            <div class="items" id="item-7"></div>
-            <div class="items" id="item-8"></div>
-            <div class="items" id="item-9"></div>
-            <div class="items" id="item-10"></div>
-        </div> -->
-       
-    </header>
+
+    </header> --> 
 
     <!-- alert -->
-    <div class="alert alert-success" style="text-align: center;" role="alert">
+    <div class="alert alert-success alert-dismissible fade show" style="text-align: center;" role="alert">
         Live! Sale is On, Hurry up
-        
+    </div>
+    <div class="menu-bar">
+        <div class="row2">
+            <div class="col2">
+                <img src="./img/icons8-offer-hot-price-96.png">
+                <a href="">Top Offers</a>
+            </div>
+            <div class="col2">
+                <img src="./img/icons8-mobile-96.png">
+                <a href="">Mobile</a>
+            </div>
+            <div class="col2">
+                <img src="./img/icons8-laptop-80.png">
+                <a href="">Electronics</a>
+            </div>
+            <div class="col2">
+                <img src="./img/icons8-grocery-bag-96.png">
+                <a href="">Grocery</a>
+            </div>
+            <div class="col2">
+                <img src="./img/icons8-womens-suit-96.png">
+                <a href="">Fashion</a>
+                <!-- <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vission</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div> -->
+            </div>
+            <div class="col2">
+                <img src="./img/icons8-sofa-96.png">
+                <a href="">Home</a>
+            </div>
+            <div class="col2">
+                <img src="./img/icons8-washing-machine-128.png">
+                <a href="">Appliances</a>
+            </div>
+            <div class="col2">
+                <img src="./img/icons8-airplane-96.png">
+                <a href="">Travel</a>
+            </div>
+            <div class="col2">
+                <img src="./img/icons8-rubik's-cube-96.png">
+                <a href="">Toys and More</a>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/sunset.jpg"  style="width: 1200px; height: 350px;"  class="d-block w-10 " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/c3.jpg" style="width: 1200px; height: 350px;" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/download.jfif" style="width: 1200px; height: 350px;" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    
 
 
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 
 </body>
+
 </html>
